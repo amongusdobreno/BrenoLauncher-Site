@@ -1,0 +1,4 @@
+main { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 20px; padding-top: 80px; }
+h1 { font-size: 4rem; margin-bottom: 20px; text-transform: uppercase; position: relative; color: #fff; }
+.subtitle { font-size: 1.4rem; color: #aaa; margin-bottom: 50px; max-width: 700px; line-height: 1.6; }
+.version-text { font-size: 0.9rem; margin-top: 20px; color: #666; letter-spacing: 1px; }

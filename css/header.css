@@ -1,0 +1,20 @@
+header {
+    display: flex;
+    justify-content: space-between; /* Espalha os itens */
+    align-items: center;
+    padding: 20px 80px; /* Aumentei o padding lateral para afastar da borda */
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(15px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+}
+.logo { font-size: 1.8rem; font-weight: bold; letter-spacing: 3px; cursor: pointer; }
+.highlight { color: #00ffff; text-shadow: 0 0 10px rgba(0, 255, 255, 0.5); }
+nav { display: flex; gap: 40px; margin-right: 50px; /* Joga o menu mais pra esquerda da borda direita */ }
+.nav-link { color: #ccc; text-decoration: none; font-size: 1.1rem; font-weight: 500; position: relative; padding: 5px 0; transition: 0.3s; }
+.nav-link:hover { color: #00ffff; }
+.nav-link::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background-color: #00ffff; transition: width 0.3s ease; }
+.nav-link:hover::after { width: 100%; }

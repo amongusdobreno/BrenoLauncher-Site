@@ -1,0 +1,251 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border_box;
+}
+
+body {
+    background-color: #050505; /* Fundo preto profundo */
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Fundo de Partículas */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(15px); /* Desfoque mais forte */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.highlight {
+    color: #00ffff;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+    padding: 5px 0;
+    transition: 0.3s;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #00ffff;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #00ffff;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Hero Section (Principal) */
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    padding-top: 80px; /* Espaço para o header */
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+    color: #fff;
+}
+
+.subtitle {
+    font-size: 1.4rem;
+    color: #aaa;
+    margin-bottom: 50px;
+    max-width: 700px;
+    line-height: 1.6;
+}
+
+.version-text {
+    font-size: 0.9rem;
+    margin-top: 20px;
+    color: #666;
+    letter-spacing: 1px;
+}
+
+/* Botão Neon Líquido (Melhorado) */
+.cta-button {
+    position: relative;
+    padding: 25px 60px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 50px;
+    background: transparent;
+    border: 3px solid #00ffff;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    transition: all 0.4s ease;
+}
+
+.cta-button span {
+    position: relative;
+    color: #00ffff;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    z-index: 1;
+    letter-spacing: 2px;
+    transition: all 0.4s ease;
+}
+
+.cta-button .liquid {
+    position: absolute;
+    top: 100%; /* Começa escondido */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00ffff;
+    transition: all 0.4s ease;
+    z-index: 0;
+    border-radius: 50px;
+}
+
+.cta-button:hover {
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.6);
+    border-color: transparent;
+}
+
+.cta-button:hover .liquid {
+    top: 0;
+}
+
+.cta-button:hover span {
+    color: #000;
+}
+
+/* Cards */
+.cards-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 100px 20px;
+    flex-wrap: wrap;
+    background: rgba(0,0,0,0.6);
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.8);
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 40px 30px;
+    border-radius: 20px;
+    width: 300px;
+    text-align: center;
+    border: 1px solid rgba(0, 255, 255, 0.1);
+    transition: 0.4s;
+    backdrop-filter: blur(5px);
+}
+
+.card:hover {
+    transform: translateY(-15px) scale(1.05);
+    border-color: #00ffff;
+    box-shadow: 0 10px 30px rgba(0, 255, 255, 0.2);
+    background: rgba(0, 255, 255, 0.05);
+}
+
+.icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    display: inline-block;
+    animation: float 3s ease-in-out infinite;
+}
+
+.card h3 {
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 15px;
+    color: #00ffff;
+    font-size: 1.5rem;
+}
+
+.card p {
+    font-size: 1rem;
+    margin-bottom: 0;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    padding: 30px;
+    text-align: center;
+    color: #444;
+    background: #050505;
+    border-top: 1px solid rgba(0, 255, 255, 0.1);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.9rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    nav { gap: 15px; }
+    h1 { font-size: 2.5rem; }
+    .subtitle { font-size: 1.1rem; }
+    .cta-button { width: 90%; }
+    .cards-section { padding: 50px 20px; }
+}

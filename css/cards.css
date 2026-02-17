@@ -1,0 +1,6 @@
+.cards-section { display: flex; justify-content: center; gap: 40px; padding: 100px 20px; flex-wrap: wrap; background: rgba(0,0,0,0.6); box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.8); }
+.card { background: rgba(255, 255, 255, 0.03); padding: 40px 30px; border-radius: 20px; width: 300px; text-align: center; border: 1px solid rgba(0, 255, 255, 0.1); transition: 0.4s; backdrop-filter: blur(5px); }
+.card:hover { transform: translateY(-15px) scale(1.05); border-color: #00ffff; box-shadow: 0 10px 30px rgba(0, 255, 255, 0.2); background: rgba(0, 255, 255, 0.05); }
+.icon { font-size: 4rem; margin-bottom: 20px; display: inline-block; animation: float 3s ease-in-out infinite; }
+.card h3 { font-family: 'Orbitron', sans-serif; margin-bottom: 15px; color: #00ffff; font-size: 1.5rem; }
+.card p { font-size: 1rem; margin-bottom: 0; color: #ccc; line-height: 1.5; }

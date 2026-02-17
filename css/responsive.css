@@ -1,0 +1,1 @@
+@media (max-width: 768px) { header { padding: 20px; flex-direction: column; gap: 20px; } nav { gap: 15px; margin-right: 0; } h1 { font-size: 2.5rem; } .subtitle { font-size: 1.1rem; } .cta-button { width: 90%; } .cards-section { padding: 50px 20px; } }
