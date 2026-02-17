@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrenoLauncher - Estaleiro Galáctico</title>
+    <title>BrenoLauncher - Central de Jogos</title>
     <style>
         body {
             background-color: #0d0d0d;
@@ -20,77 +20,90 @@
         }
         h1 { font-size: 3em; margin: 0; text-shadow: 0 0 10px #00ffff; }
         .hero {
-            padding: 50px;
-            background: linear-gradient(180deg, #111 0%, #0d0d0d 100%);
+            padding: 80px 20px;
+            background: linear-gradient(180deg, #111 0%, #050505 100%);
         }
+        h2 { font-size: 2em; margin-bottom: 10px; }
+        p { color: #ccc; font-size: 1.2em; max-width: 600px; margin: 0 auto 30px auto; }
+        
         .btn {
-            background: transparent;
-            border: 2px solid #00ffff;
-            color: #00ffff;
-            padding: 15px 30px;
-            font-size: 1.2em;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            margin: 10px;
-            transition: 0.3s;
-        }
-        .btn:hover {
             background: #00ffff;
             color: #000;
-            box-shadow: 0 0 20px #00ffff;
+            font-weight: bold;
+            padding: 20px 40px;
+            font-size: 1.5em;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            transition: 0.3s;
+            box-shadow: 0 0 15px #00ffff;
         }
+        .btn:hover {
+            background: #fff;
+            box-shadow: 0 0 30px #00ffff;
+            transform: scale(1.05);
+        }
+
         .features {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            padding: 20px;
+            padding: 40px;
+            gap: 20px;
         }
         .card {
             border: 1px solid #333;
             padding: 20px;
-            margin: 10px;
             width: 250px;
             background: #1a1a1a;
+            border-radius: 10px;
         }
-        .warning { color: red; font-weight: bold; margin-top: 50px;}
+        .card h3 { color: #00ffff; }
+        
+        .footer {
+            margin-top: 50px;
+            padding: 20px;
+            border-top: 1px solid #333;
+            color: #555;
+            font-size: 0.8em;
+        }
     </style>
 </head>
 <body>
 
     <header>
         <h1>BRENO LAUNCHER</h1>
-        <p>Comandante: Capitão Breno</p>
     </header>
 
     <div class="hero">
-        <h2>O Lançador de Jogos Definitivo</h2>
-        <p>Loja Galáctica | Bap Chat | Multiplayer</p>
-        <br>
-        <a href="#" class="btn">BAIXAR SETUP (v1.0)</a>
-        <a href="https://github.com/SEU_USUARIO/BrenoLauncher" class="btn">COLABORAR NO GITHUB (Open Source)</a>
+        <h2>Sua Nova Central de Jogos</h2>
+        <p>Organize, baixe e jogue. Simples, leve e direto ao ponto. Sem distrações.</p>
+        <p>Se o navegador falar que é virus, nao tenha medo, nosso launcher é indie e seguro.</p>
+        
+        <a href="https://download1583.mediafire.com/ardf7h6r6p3gAlZ3epLyG4aKeN3MJ8COgBEQgQ_S4ObEdq40zgW3WdzGNgPeS4tG0OU3MqzenuIusELrQfuoJDORWIMXf16dnrf5CQJT4xP4RwCrafnPK1yRyIorwfzYfrVuxkrljOKKbss_zv5wUQAh-kRCVXcl1LyNR_xclASUYQ/8d1mka3zq52foj8/Instalador_BrenoLauncher_Oficial.exe" class="btn" target="_blank">BAIXAR AGORA (Windows)</a>
+    
     </div>
 
     <div class="features">
         <div class="card">
-            <h3>🛒 Loja</h3>
-            <p>Baixe jogos da comunidade via Links Externos.</p>
+            <h3>🛒 Loja Galáctica</h3>
+            <p>Encontre os melhores jogos indies e fan-games selecionados pelo Capitão.</p>
         </div>
         <div class="card">
-            <h3>💬 Bap Chat</h3>
-            <p>Converse com seus amigos pilotos em tempo real.</p>
+            <h3>🎮 Biblioteca Local</h3>
+            <p>O Launcher escaneia sua pasta automaticamente. É só baixar e jogar.</p>
         </div>
         <div class="card">
-            <h3>🛡️ Segurança</h3>
-            <p>Sistema protegido e verificado pelo Capitão.</p>
+            <h3>⚡ Leve & Rápido</h3>
+            <p>Feito em Python. Focado em performance máxima para sua máquina.</p>
         </div>
     </div>
 
-    <p class="warning">⚠️ LEI 9.609/98: A PIRATARIA É CRIME.<br>Este launcher não apoia a distribuição ilegal de software.</p>
-
-    <footer>
+    <div class="footer">
         <p>© 2026 Breno Studios. All rights reserved.</p>
-    </footer>
+        <p>Este software respeita as leis de direitos autorais. Jogos externos são responsabilidade de seus criadores.</p>
+    </div>
 
 </body>
 </html>
